@@ -134,7 +134,7 @@ def run():
     img = Image.open('./Logo/title.png')
     st.image(img)
     st.sidebar.markdown("# Choose Something...")
-    activities = ["User", "Feedback", "About", "Admin"]
+    activities = ["User", "Feedback", "Admin"]
     choice = st.sidebar.selectbox("Choose among the given options:", activities)
     link = '<b>Built  by <a href="https://dnoobnerd.netlify.app/" style="text-decoration: none; color: #fff;">Hemanth & Sai Charan</a></b>' 
     st.sidebar.markdown(link, unsafe_allow_html=True)
@@ -613,17 +613,17 @@ def run():
 
     
     ###### CODE FOR ABOUT PAGE ######
-    elif choice == 'About':   
+    # elif choice == 'About':   
 
-        st.subheader("**About The Tool - AI RESUME ANALYZER**")
+    #     st.subheader("**About The Tool - AI RESUME ANALYZER**")
 
-        st.markdown('''
-
-
-        ''',unsafe_allow_html=True)  
+    #     st.markdown('''
 
 
-    ###### CODE FOR ADMIN SIDE (ADMIN) ######
+    #     ''',unsafe_allow_html=True)  
+
+
+    ##### CODE FOR ADMIN SIDE (ADMIN) ######
     else:
         st.success('Welcome to Admin Side')
 
